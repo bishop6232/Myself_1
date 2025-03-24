@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 15, in script
+    image bg bedroom = Transform("images/Myself_BG05.jpg", zoom= 1.5, screen_width= 150)
+  File "game/script.rpy", line 15, in <module>
+    image bg bedroom = Transform("images/Myself_BG05.jpg", zoom= 1.5, screen_width= 150)
+Exception: Unknown transform property: 'screen_width'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 15, in script
+    image bg bedroom = Transform("images/Myself_BG05.jpg", zoom= 1.5, screen_width= 150)
+  File "/Volumes/renpy-8.3.7-sdk/renpy-8.3.7-sdk/renpy/ast.py", line 933, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Volumes/renpy-8.3.7-sdk/renpy-8.3.7-sdk/renpy/python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 15, in <module>
+    image bg bedroom = Transform("images/Myself_BG05.jpg", zoom= 1.5, screen_width= 150)
+  File "/Volumes/renpy-8.3.7-sdk/renpy-8.3.7-sdk/renpy/display/transform.py", line 745, in __init__
+    raise Exception("Unknown transform property: %r" % k)
+Exception: Unknown transform property: 'screen_width'
+
+macOS-15.3.2-arm64-arm-64bit arm64
+Ren'Py 8.3.7.25031702
+Myself 1 1.0
+Mon Mar 24 11:10:08 2025
